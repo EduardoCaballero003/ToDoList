@@ -20,8 +20,8 @@ const toggleCompletedBtn = document.getElementById("toggleCompleted");
 const purgeCompletedBtn = document.getElementById("purgeCompleted");
 function displayTodoList() {
     title.textContent = `${collection.userName}'s Todo List `;
-    act_toDo_completes.textContent = `complete: ${collection.getItemCounts().total - collection.getItemCounts().incomplete}`;
-    act_toDo_incompletes.textContent = `incomplete: ${collection.getItemCounts().incomplete}`;
+    act_toDo_completes.textContent = `completas: ${collection.getItemCounts().total - collection.getItemCounts().incomplete}`;
+    act_toDo_incompletes.textContent = `incompletas: ${collection.getItemCounts().incomplete}`;
     todoList.innerHTML = ""; // Limpiar la lista antes de redibujar
     collection.getTodoItems(showCompleted).forEach(item => {
         let cardContainer = document.createElement("div");
@@ -51,8 +51,8 @@ function displayTodoList() {
             }
             //reiniciar encabezado
             title.textContent = `${collection.userName}'s Todo List `;
-            act_toDo_completes.textContent = `complete: ${collection.getItemCounts().total - collection.getItemCounts().incomplete}`;
-            act_toDo_incompletes.textContent = `incomplete: ${collection.getItemCounts().incomplete}`;
+            act_toDo_completes.textContent = `completas: ${collection.getItemCounts().total - collection.getItemCounts().incomplete}`;
+            act_toDo_incompletes.textContent = `incompletas: ${collection.getItemCounts().incomplete}`;
         });
         // Construcción de la estructura
         cardBody.appendChild(cardTitle);
