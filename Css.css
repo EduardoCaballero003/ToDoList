@@ -1,0 +1,9 @@
+#card_container .row .card{
+    min-height: 200px;
+}
+
+#card_container .complete-btn-complete{
+    background-color: #e6fff7;
+    text-decoration:line-through;
+    color:  #9292b9;
+}
