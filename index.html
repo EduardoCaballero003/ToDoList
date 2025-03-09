@@ -59,18 +59,18 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="addTaskModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="addTaskModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-theme="dark">
         <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <h1 class="modal-title fs-5 fw-bold text-light" id="exampleModalLabel">Nueva Tarea</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <input type="text" id="taskInput" placeholder="Enter task">
+            <div class="modal-body text-center">
+                <input type="text" id="taskInput" class="w-100 border-0 shadow-lg p-3" placeholder="Enter task">
             </div>
             <div class="modal-footer">
-            <button id="addTaskBtn" type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                <button id="addTaskBtn" type="button" class="btn btn-success mx-auto" data-bs-dismiss="modal">Save changes</button>
             </div>
         </div>
         </div>
